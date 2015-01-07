@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "_book"
+  ],
+  "ext": "json md"
+}
