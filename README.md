@@ -1,4 +1,4 @@
-# wgy-server-api
+#[wgy server api 文档](http://bugknightyyp.github.io/wgy-server-api "wgy server api 文档")
 
 1 **、接口采用基于面向资源模型(restful)来提供服务；**
 
