@@ -1,0 +1,20 @@
+#登出
+
+
+
+##url
+`/user/signout`
+
+
+##http method
+`delete`
+
+
+##respond
+eg:
+```
+
+```
+
+
+
