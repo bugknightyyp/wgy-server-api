@@ -32,7 +32,7 @@
 
 
         
-    <div class="book" data-level="0" data-basepath="." data-revision="1421856877429">
+    <div class="book" data-level="0" data-basepath="." data-revision="1421857447088">
     
 
 <div class="book-summary">
@@ -476,8 +476,8 @@
 <ul>
 <li>create: post (非幂等)- 每次请求都是新增</li>
 <li>read: get(幂等) - 获取资源</li>
-<li>update: put(幂等) - 更新资源</li>
-<li>delete: delete(幂等) - 删除资源</li>
+<li>update: put(幂等) - 更新资源 (如果不支持<code>put</code>方法，可用<code>post</code>方法模拟，在请求体中附加字段<code>_method: put</code>即可)</li>
+<li>delete: delete(幂等) - 删除资源 (如果不支持<code>delete</code>方法，可用<code>post</code>方法模拟，在请求体中附加字段<code>_method: delete</code>即可)</li>
 </ul>
 <p>2 <strong>、使用<code>cookie</code>、<code>session</code>实现登录机制</strong></p>
 <ul>
