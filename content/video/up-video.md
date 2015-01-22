@@ -11,11 +11,20 @@
 
 ##params
 
+##request
+eg
+```
+[Request Header]
+Request URL: /video/54c0ed5fd21d193021b96afb/up
+Request Method: PUT
+```
 
 ##respond
 eg:
 ```
-
+{
+  "ok": 1
+}
 ```
 
 

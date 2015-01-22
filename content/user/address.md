@@ -13,10 +13,26 @@
 
  * `address`: String
 
+
+##request
+eg:
+```
+[Request Header]
+
+Request URL: /user/address
+Request Method: PUT
+
+[Request Body]
+
+address: 广东省 深圳市
+```
+
 ##respond
 eg:
 ```
-
+{
+  "ok": 1
+}
 ```
 
 

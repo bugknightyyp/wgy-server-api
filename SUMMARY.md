@@ -1,8 +1,8 @@
 # Summary
 
 * [user](content/user/index.md)
-    * [signin](content/user/signin.md)
     * [signup](content/user/signup.md)
+    * [signin](content/user/signin.md)
     * [signout](content/user/signout.md)
     * [sex](content/user/sex.md)
     * [portrait](content/user/portrait.md)

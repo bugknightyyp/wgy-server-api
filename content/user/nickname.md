@@ -11,12 +11,26 @@
 
 ##rquest body params
 
- * `nickname`: String 
+ * `nickname`: String
 
+##request
+eg:
+```
+[Request Header]
+
+Request URL: /user/nickname
+Request Method: PUT
+
+[Request Body]
+
+nickname: yyper
+```
 ##respond
 eg:
 ```
-
+{
+  "ok": 1
+}
 ```
 
 

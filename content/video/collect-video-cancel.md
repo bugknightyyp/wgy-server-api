@@ -1,4 +1,4 @@
-#添加视频
+#取消被收藏视频
 
 
 
@@ -9,13 +9,23 @@
 ##http method
 `delete`
 
-##params
+##Request 
+eg
+```
+[Request Header]
+
+Request URL: video/54c0ed5fd21d193021b96afb/collected
+Request Method: DELETE
+
+```
 
 
 ##respond
 eg:
 ```
-
+{
+  "ok": 1
+}
 ```
 
 

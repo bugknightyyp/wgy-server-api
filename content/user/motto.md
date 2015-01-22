@@ -13,10 +13,24 @@
 
  * `motton`: String 
 
+##request
+eg:
+```
+[Request Header]
+
+Request URL: /user/motto
+Request Method: PUT
+
+[Request Body]
+
+motto: 我就是喜欢挖光阴
+```
 ##respond
 eg:
 ```
-
+{
+  "ok": 1
+}
 ```
 
 

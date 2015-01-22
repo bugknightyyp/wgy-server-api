@@ -1,9 +1,10 @@
-#登录
+#注册
 
-用户通过输入手机号和密码登陆
+用户通过输入手机号和密码注册
+登录注册成功后，会将user_id写到cookie里
 
 ##url
-`/user/signup`
+`/user/signin`
 
 
 ##http method
@@ -11,13 +12,28 @@
 
 ##rquest body params
 
- * `phone`: string 
- * `pwd`: string
+ * `phone`: Number 
+ * `pwd`: String
 
+##request
+eg:
+```
+[Request Header]
+
+Request URL: /user/signup
+Request Method: POST
+
+[Request Body]
+
+phone:15820456816
+pwd:wgyyyp8886423
+```
 ##respond
 eg:
 ```
-
+{
+  "ok": 1
+}
 ```
 
 
