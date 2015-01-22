@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="1.8" data-basepath="../.." data-revision="1421857447088">
+    <div class="book" data-level="1.8" data-basepath="../.." data-revision="1421948172020">
     
 
 <div class="book-summary">
@@ -83,15 +83,15 @@
                 
     
         
-        <li class="chapter " data-level="1.1" data-path="content/user/signin.html">
+        <li class="chapter " data-level="1.1" data-path="content/user/signup.html">
             
                 
-                    <a href="../../content/user/signin.html">
+                    <a href="../../content/user/signup.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         signin
+                         signup
                     </a>
                 
             
@@ -99,15 +99,15 @@
         </li>
     
         
-        <li class="chapter " data-level="1.2" data-path="content/user/signup.html">
+        <li class="chapter " data-level="1.2" data-path="content/user/signin.html">
             
                 
-                    <a href="../../content/user/signup.html">
+                    <a href="../../content/user/signin.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         signup
+                         signin
                     </a>
                 
             
@@ -470,7 +470,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_2">
+                    <section class="normal" id="section-gitbook_3">
                     
                         <h1 id="">地址</h1>
 <p>用户通过输入地址设置地址</p>
@@ -482,10 +482,21 @@
 <ul>
 <li><code>address</code>: String</li>
 </ul>
-<h2 id="respond">respond</h2>
+<h2 id="request">request</h2>
 <p>eg:</p>
-<pre><code>
+<pre><code>[Request Header]
 
+Request URL: /user/address
+Request Method: PUT
+
+[Request Body]
+
+address: 广东省 深圳市
+</code></pre><h2 id="respond">respond</h2>
+<p>eg:</p>
+<pre><code>{
+  &quot;ok&quot;: 1
+}
 </code></pre>
                     
                     </section>

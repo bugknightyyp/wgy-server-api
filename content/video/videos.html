@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="2.7" data-basepath="../.." data-revision="1421857447088">
+    <div class="book" data-level="2.7" data-basepath="../.." data-revision="1421948172020">
     
 
 <div class="book-summary">
@@ -83,15 +83,15 @@
                 
     
         
-        <li class="chapter " data-level="1.1" data-path="content/user/signin.html">
+        <li class="chapter " data-level="1.1" data-path="content/user/signup.html">
             
                 
-                    <a href="../../content/user/signin.html">
+                    <a href="../../content/user/signup.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         signin
+                         signup
                     </a>
                 
             
@@ -99,15 +99,15 @@
         </li>
     
         
-        <li class="chapter " data-level="1.2" data-path="content/user/signup.html">
+        <li class="chapter " data-level="1.2" data-path="content/user/signin.html">
             
                 
-                    <a href="../../content/user/signup.html">
+                    <a href="../../content/user/signin.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         signup
+                         signin
                     </a>
                 
             
@@ -470,7 +470,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_20">
+                    <section class="normal" id="section-gitbook_18">
                     
                         <h1 id="">获取视频列表</h1>
 <h2 id="url">url</h2>
@@ -480,7 +480,13 @@
 <h2 id="rquest-query-params">rquest query params</h2>
 <ul>
 <li><code>page_index</code>: Number, default: 0 </li>
-<li><code>page_size</code>: Number, default: 10</li>
+<li><p><code>page_size</code>: Number, default: 10</p>
+<h2 id="request">request</h2>
+<p>eg:</p>
+<pre><code>[Request Header]
+Request URL: /videos?page_index=0&amp;page_size=10
+Request Method:GET
+</code></pre></li>
 </ul>
 <h2 id="respond">respond</h2>
 <p>eg:</p>
@@ -491,16 +497,29 @@
     &quot;page_size&quot;: &quot;10&quot;,
     &quot;videos&quot;: [
       {
-        &quot;_id&quot;: &quot;54bfc8a03b6474002613aedf&quot;,
+        &quot;_id&quot;: &quot;54c12b14dc9000ec25378b6b&quot;,
         &quot;title&quot;: &quot;这是视频标题&quot;,
         &quot;describe&quot;: &quot;这是视频描述&quot;,
-        &quot;create_time&quot;: &quot;2015-01-21T07:41:19.670Z&quot;,
-        &quot;object_name&quot;: &quot;29e162d7-39e7-4ecf-a465-ebb87358ee77&quot;,
+        &quot;user_id&quot;: &quot;54c12652dc9000ec25378b6a&quot;,
+        &quot;create_time&quot;: &quot;2015-01-22T08:53:40.277Z&quot;,
+        &quot;object_name&quot;: &quot;30fd858a-15ec-4273-af33-41bdb40df0dc&quot;,
         &quot;original_filename&quot;: &quot;miaopai0725.mp4&quot;,
         &quot;duration&quot;: 59.1,
-        &quot;cover&quot;: &quot;29e162d7-39e7-4ecf-a465-ebb87358ee77_0s.jpg&quot;
+        &quot;cover&quot;: &quot;30fd858a-15ec-4273-af33-41bdb40df0dc_0s.jpg&quot;
       },
-      ...
+      {
+        &quot;_id&quot;: &quot;54c0ed5fd21d193021b96afb&quot;,
+        &quot;title&quot;: &quot;这是视频标题&quot;,
+        &quot;describe&quot;: &quot;这是视频描述&quot;,
+        &quot;user_id&quot;: &quot;54c0e6c42daf32f00cdf0a5c&quot;,
+        &quot;create_time&quot;: &quot;2015-01-22T04:30:23.236Z&quot;,
+        &quot;object_name&quot;: &quot;e0cb11f1-1edd-4824-8f04-ef3423b1cc61&quot;,
+        &quot;original_filename&quot;: &quot;miaopai0725.mp4&quot;,
+        &quot;duration&quot;: 59.1,
+        &quot;cover&quot;: &quot;e0cb11f1-1edd-4824-8f04-ef3423b1cc61_0s.jpg&quot;,
+        &quot;up&quot;: 19,
+        &quot;collected&quot;: 25
+      }
     ]
   }
 }

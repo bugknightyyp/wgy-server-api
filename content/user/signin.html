@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../content/user/signup.html" />
+    <link rel="next" href="../../content/user/signout.html" />
     
     
-    <link rel="prev" href="../../content/user/index.html" />
+    <link rel="prev" href="../../content/user/signup.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="1.1" data-basepath="../.." data-revision="1421857447088">
+    <div class="book" data-level="1.2" data-basepath="../.." data-revision="1421948172020">
     
 
 <div class="book-summary">
@@ -83,15 +83,15 @@
                 
     
         
-        <li class="chapter active" data-level="1.1" data-path="content/user/signin.html">
+        <li class="chapter " data-level="1.1" data-path="content/user/signup.html">
             
                 
-                    <a href="../../content/user/signin.html">
+                    <a href="../../content/user/signup.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                         signin
+                         signup
                     </a>
                 
             
@@ -99,15 +99,15 @@
         </li>
     
         
-        <li class="chapter " data-level="1.2" data-path="content/user/signup.html">
+        <li class="chapter active" data-level="1.2" data-path="content/user/signin.html">
             
                 
-                    <a href="../../content/user/signup.html">
+                    <a href="../../content/user/signin.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
                         
-                         signup
+                         signin
                     </a>
                 
             
@@ -470,7 +470,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-gitbook_20">
                     
                         <h1 id="">登录</h1>
 <p>用户通过输入手机号和密码登陆
@@ -484,9 +484,22 @@
 <li><code>phone</code>: string </li>
 <li><code>pwd</code>: string</li>
 </ul>
-<h2 id="respond">respond</h2>
+<h2 id="request">request</h2>
 <p>eg:</p>
-<pre><code>{&quot;ok&quot;:1}
+<pre><code>[Request Header]
+
+Request URL: /user/signin
+Request Method: POST
+
+[Request Body]
+
+phone:15820456816
+pwd:wgyyyp8886423
+</code></pre><h2 id="respond">respond</h2>
+<p>eg:</p>
+<pre><code>{
+  &quot;ok&quot;: 1
+}
 </code></pre>
                     
                     </section>
@@ -497,10 +510,10 @@
         </div>
 
         
-        <a href="../../content/user/index.html" class="navigation navigation-prev " aria-label="Previous page: user"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/user/signup.html" class="navigation navigation-prev " aria-label="Previous page: signup"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/user/signup.html" class="navigation navigation-next " aria-label="Next page: signup"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/user/signout.html" class="navigation navigation-next " aria-label="Next page: signout"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
