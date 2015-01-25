@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>delete video | wgy server api 文档 wgy server api 文档</title>
+        <title>user basic info | wgy server api 文档 wgy server api 文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../content/video/collect-video.html" />
+    <link rel="next" href="../../content/video/index.html" />
     
     
-    <link rel="prev" href="../../content/video/add-video.html" />
+    <link rel="prev" href="../../content/user/address.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="2.2" data-basepath="../.." data-revision="1422167679970">
+    <div class="book" data-level="1.9" data-basepath="../.." data-revision="1422167679970">
     
 
 <div class="book-summary">
@@ -211,7 +211,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.9" data-path="content/user/user-basic-info.html">
+        <li class="chapter active" data-level="1.9" data-path="content/user/user-basic-info.html">
             
                 
                     <a href="../../content/user/user-basic-info.html">
@@ -265,7 +265,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.2" data-path="content/video/add-video-delete.html">
+        <li class="chapter " data-level="2.2" data-path="content/video/add-video-delete.html">
             
                 
                     <a href="../../content/video/add-video-delete.html">
@@ -486,26 +486,31 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_19">
+                    <section class="normal" id="section-gitbook_11">
                     
-                        <h1 id="">删除视频</h1>
+                        <h1 id="">获取用户基本信息</h1>
 <h2 id="url">url</h2>
-<p><code>/video/:video_id</code></p>
+<p><code>/user</code></p>
 <h2 id="http-method">http method</h2>
-<p><code>delete</code></p>
-<h2 id="params">params</h2>
+<p><code>get</code></p>
 <h2 id="request">request</h2>
 <p>eg:</p>
 <pre><code>[Request Header]
 
-Request URL: /video/54c0e923d21d193021b96afa
-Request Method: DELETE
+Request URL: /user
+Request Method: GET
 </code></pre><h2 id="respond">respond</h2>
 <p>eg:</p>
 <pre><code>{
   &quot;ok&quot;: 1,
   &quot;result&quot;: {
-    &quot;video_id&quot;: &quot;54c0e923d21d193021b96afa&quot; //删除的video_id
+    &quot;_id&quot;: &quot;54c3c65ec0e1c75c1223e6a4&quot;,
+    &quot;phone&quot;: &quot;15820456816&quot;,
+    &quot;sex&quot;: &quot;0&quot;,
+    &quot;address&quot;: &quot;深圳市&quot;,
+    &quot;motto&quot;: &quot;我要当厨师&quot;,
+    &quot;nickname&quot;: &quot;yyper&quot;,
+    &quot;portrait&quot;: &quot;0a89ccc5-cee7-4389-8b40-49f60646dcb6.jpg&quot;
   }
 }
 </code></pre>
@@ -518,10 +523,10 @@ Request Method: DELETE
         </div>
 
         
-        <a href="../../content/video/add-video.html" class="navigation navigation-prev " aria-label="Previous page: add video"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/user/address.html" class="navigation navigation-prev " aria-label="Previous page: address"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/video/collect-video.html" class="navigation navigation-next " aria-label="Next page: collect video"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/video/index.html" class="navigation navigation-next " aria-label="Next page: video"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
