@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>motto | wgy server api 文档 wgy server api 文档</title>
+        <title>video creates | wgy server api 文档 wgy server api 文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../content/user/address.html" />
+    <link rel="next" href="../../content/video/index.html" />
     
     
-    <link rel="prev" href="../../content/user/nickname.html" />
+    <link rel="prev" href="../../content/user/video-ups.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="1.7" data-basepath="../.." data-revision="1422457115177">
+    <div class="book" data-level="1.12" data-basepath="../.." data-revision="1422457115177">
     
 
 <div class="book-summary">
@@ -179,7 +179,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="1.7" data-path="content/user/motto.html">
+        <li class="chapter " data-level="1.7" data-path="content/user/motto.html">
             
                 
                     <a href="../../content/user/motto.html">
@@ -259,7 +259,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.12" data-path="content/user/video-creates.html">
+        <li class="chapter active" data-level="1.12" data-path="content/user/video-creates.html">
             
                 
                     <a href="../../content/user/video-creates.html">
@@ -550,32 +550,52 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4">
+                    <section class="normal" id="section-gitbook_10">
                     
-                        <h1 id="">个性签名</h1>
-<p>用户输入个性签名设置个性签名</p>
+                        <h1 id="">获取用户上传的视频</h1>
 <h2 id="url">url</h2>
-<p><code>/user/motton</code></p>
+<p><code>/user/:user_id/creates</code></p>
 <h2 id="http-method">http method</h2>
-<p><code>put</code></p>
-<h2 id="rquest-body-params">rquest body params</h2>
-<ul>
-<li><code>motton</code>: String </li>
-</ul>
+<p><code>get</code></p>
 <h2 id="request">request</h2>
 <p>eg:</p>
 <pre><code>[Request Header]
 
-Request URL: /user/motto
-Request Method: PUT
-
-[Request Body]
-
-motto: 我就是喜欢挖光阴
+Request URL: /user/54c706225a0279402e802cfa/creates
+Request Method: GET
 </code></pre><h2 id="respond">respond</h2>
 <p>eg:</p>
 <pre><code>{
-  &quot;ok&quot;: 1
+  &quot;ok&quot;: 1,
+  &quot;result&quot;: {
+    &quot;videos&quot;: [
+      {
+        &quot;_id&quot;: &quot;54c85f37227965a01407b6f6&quot;,
+        &quot;title&quot;: &quot;这是视频标题&quot;,
+        &quot;describe&quot;: &quot;这是视频描述&quot;,
+        &quot;create_time&quot;: 1422388918,
+        &quot;object_name&quot;: &quot;7f834182-d3e9-4763-b8e1-b8235e988aac&quot;,
+        &quot;original_filename&quot;: &quot;miaopai0725.mp4&quot;,
+        &quot;duration&quot;: 59.1,
+        &quot;cover&quot;: &quot;7f834182-d3e9-4763-b8e1-b8235e988aac_0s.jpg&quot;,
+        &quot;uped&quot;: 1,
+        &quot;collected&quot;: 1,
+        &quot;user&quot;: {
+          &quot;_id&quot;: &quot;54c706225a0279402e802cfa&quot;,
+          &quot;phone&quot;: &quot;15820456816&quot;,
+          &quot;sex&quot;: &quot;0&quot;,
+          &quot;address&quot;: &quot;深圳市&quot;,
+          &quot;motto&quot;: &quot;我要当厨师&quot;,
+          &quot;nickname&quot;: &quot;yyper&quot;,
+          &quot;portrait&quot;: &quot;26bd549b-0467-402a-97eb-ff27cbb086ec.jpg&quot;
+        },
+        &quot;isuped&quot;: true
+      }
+    ],
+    &quot;user_id&quot;: &quot;54c706225a0279402e802cfa&quot;,
+    &quot;page_index&quot;: 0,
+    &quot;page_size&quot;: 10
+  }
 }
 </code></pre>
                     
@@ -587,10 +607,10 @@ motto: 我就是喜欢挖光阴
         </div>
 
         
-        <a href="../../content/user/nickname.html" class="navigation navigation-prev " aria-label="Previous page: nickname"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/user/video-ups.html" class="navigation navigation-prev " aria-label="Previous page: video ups"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/user/address.html" class="navigation navigation-next " aria-label="Next page: address"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/video/index.html" class="navigation navigation-next " aria-label="Next page: video"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
