@@ -2,7 +2,7 @@
 
 
 ##url
-`/user/:user_id/follow`
+`/user/:user_followed_id/follow`
 
 
 ##http method
