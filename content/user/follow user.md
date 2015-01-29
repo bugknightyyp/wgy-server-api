@@ -2,7 +2,7 @@
 
 
 ##url
-`/user/:user_followed_id/follow`
+`/user/:user_followed_id(被关注者id)/follow`
 
 
 ##http method
