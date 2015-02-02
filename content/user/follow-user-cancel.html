@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>video collects | wgy server api 文档 wgy server api 文档</title>
+        <title>follow user cancel | wgy server api 文档 wgy server api 文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../content/user/video-ups.html" />
+    <link rel="next" href="../../content/video/index.html" />
     
     
-    <link rel="prev" href="../../content/user/user-basic-info.html" />
+    <link rel="prev" href="../../content/user/follow-user.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="1.10" data-basepath="../.." data-revision="1422863418613">
+    <div class="book" data-level="1.15" data-basepath="../.." data-revision="1422863418613">
     
 
 <div class="book-summary">
@@ -227,7 +227,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="1.10" data-path="content/user/video-collects.html">
+        <li class="chapter " data-level="1.10" data-path="content/user/video-collects.html">
             
                 
                     <a href="../../content/user/video-collects.html">
@@ -307,7 +307,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.15" data-path="content/user/follow-user-cancel.html">
+        <li class="chapter active" data-level="1.15" data-path="content/user/follow-user-cancel.html">
             
                 
                     <a href="../../content/user/follow-user-cancel.html">
@@ -598,54 +598,30 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_15">
+                    <section class="normal" id="section-gitbook_9">
                     
-                        <h1 id="">用户收藏的视频</h1>
+                        <h1 id="">取消关注用户</h1>
 <h2 id="url">url</h2>
-<p><code>/user/:user_id/collects</code></p>
+<p><code>/user/:user_followed_id(被关注者id)/follow</code></p>
 <h2 id="http-method">http method</h2>
-<p><code>get</code></p>
+<p><code>delete</code></p>
 <h2 id="request">request</h2>
 <p>eg:</p>
 <pre><code>[Request Header]
 
-Request URL: /user/54c706225a0279402e802cfa/collects
-Request Method: GET
-
-[Request Body]
+Request URL: /user/54ca7291b615a4082b14311e/follow
+Request Method: DELETE
 </code></pre><h2 id="respond">respond</h2>
 <p>eg:</p>
 <pre><code>{
-  &quot;ok&quot;: 1,
-  &quot;result&quot;: {
-    &quot;videos&quot;: [
-      {
-        &quot;_id&quot;: &quot;54c708be76fbcf1824afb07e&quot;,
-        &quot;title&quot;: &quot;3&quot;,
-        &quot;describe&quot;: &quot;4&quot;,
-        &quot;create_time&quot;: 1422301246491,
-        &quot;object_name&quot;: &quot;8ca71c71-7e88-40b3-b13a-09a318bb7577&quot;,
-        &quot;original_filename&quot;: &quot;miaopai0725.mp4&quot;,
-        &quot;duration&quot;: 59.1,
-        &quot;cover&quot;: &quot;8ca71c71-7e88-40b3-b13a-09a318bb7577_0s.jpg&quot;,
-        &quot;uped&quot;: 1, //被赞数
-        &quot;collected&quot;: 1, //被收藏数
-        &quot;isuped&quot;: true //当前登录用户是赞过该视频
-        &quot;user&quot;: {
-          &quot;_id&quot;: &quot;54c706225a0279402e802cfa&quot;,
-          &quot;phone&quot;: &quot;15820456816&quot;,
-          &quot;sex&quot;: &quot;0&quot;,
-          &quot;address&quot;: &quot;深圳市&quot;,
-          &quot;motto&quot;: &quot;我要当厨师&quot;,
-          &quot;nickname&quot;: &quot;yyper&quot;
-        },
+  &quot;ok&quot;: 1
+}
 
-      }
-    ],
-    &quot;user_id&quot;: &quot;54c706225a0279402e802cfa&quot;,
-    &quot;page_index&quot;: 0,
-    &quot;page_size&quot;: 10
-  }
+or 
+
+{
+  &quot;ok&quot;: 0,
+  &quot;msg&quot;: &quot;不存在关注关系&quot;
 }
 </code></pre>
                     
@@ -657,10 +633,10 @@ Request Method: GET
         </div>
 
         
-        <a href="../../content/user/user-basic-info.html" class="navigation navigation-prev " aria-label="Previous page: user basic info"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/user/follow-user.html" class="navigation navigation-prev " aria-label="Previous page: follow user"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/user/video-ups.html" class="navigation navigation-next " aria-label="Next page: video ups"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/video/index.html" class="navigation navigation-next " aria-label="Next page: video"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
