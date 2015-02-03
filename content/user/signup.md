@@ -4,7 +4,7 @@
 登录注册成功后，会将user_id写到cookie里
 
 ##url
-`/user/signin`
+`/user/signup`
 
 
 ##http method
@@ -14,6 +14,7 @@
 
  * `phone`: Number 
  * `pwd`: String
+ * `auth_code`: Number //目前还没有这个服务，可不填，也可任意填
 
 ##request
 eg:
@@ -27,6 +28,7 @@ Request Method: POST
 
 phone:15820456816
 pwd:wgyyyp8886423
+auth_code:58946
 ```
 ##respond
 eg:

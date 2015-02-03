@@ -32,36 +32,53 @@ eg:
   "result": {
     "page_index": "0",
     "page_size": "10",
-    "video_id": "54c0ed5fd21d193021b96afb",
-    "list": [
+    "video_id": "54c708be76fbcf1824afb07e",
+    "comments": [
       {
-        "_id": "54c105ee7de429502d3bf2db",
+        "_id": "54c7d8b3ff1335141c96cf8b",
+        "video_id": "54c708be76fbcf1824afb07e",
         "content": "我的评论",
-        "video_id": "54c0ed5fd21d193021b96afb",
-        "user_id": "54c0e6c42daf32f00cdf0a5c"
+        "create_time": 1422354483, //GMT 秒
+        "user": {
+          "_id": "54c706225a0279402e802cfa",
+          "nickname": "yyper",
+          "portrait": "26bd549b-0467-402a-97eb-ff27cbb086ec.jpg"
+        }
       },
       {
-        "_id": "54c10622d63166882f947fec",
+        "_id": "54c7d7833d0ecd283797ec08",
+        "video_id": "54c708be76fbcf1824afb07e",
         "content": "我的评论",
-        "video_id": "54c0ed5fd21d193021b96afb",
-        "user_id": "54c0e6c42daf32f00cdf0a5c"
+        "create_time": 1422354179,
+        "user": {
+          "_id": "54c706225a0279402e802cfa",
+          "nickname": "yyper",
+          "portrait": "26bd549b-0467-402a-97eb-ff27cbb086ec.jpg"
+        }
       },
       {
-        "_id": "54c1068aa7089f1c11b5b9b0",
+        "_id": "54c7d1d34ce0e1bc2eb7b119",
+        "video_id": "54c708be76fbcf1824afb07e",
         "content": "我的评论",
-        "video_id": "54c0ed5fd21d193021b96afb",
-        "user_id": "54c0e6c42daf32f00cdf0a5c",
-        "content_time": "2015-01-22T06:17:46.885Z"
+        "create_time": 1422352723,
+        "user": {
+          "_id": "54c706225a0279402e802cfa",
+          "nickname": "yyper",
+          "portrait": "26bd549b-0467-402a-97eb-ff27cbb086ec.jpg"
+        }
       },
       {
-        "_id": "54c12e0adc9000ec25378b6c",
+        "_id": "54c7d1aed4f41154167c4a9c",
+        "video_id": "54c708be76fbcf1824afb07e",
         "content": "我的评论",
-        "video_id": "54c0ed5fd21d193021b96afb",
-        "user_id": "54c12652dc9000ec25378b6a",
-        "content_time": "2015-01-22T09:06:18.577Z"
+        "create_time": 1422352636,
+        "user": {
+          "_id": "54c706225a0279402e802cfa",
+          "nickname": "yyper",
+          "portrait": "26bd549b-0467-402a-97eb-ff27cbb086ec.jpg"
+        }
       }
     ]
   }
 }
-
 ```

@@ -32,28 +32,26 @@ eg:
     "page_size": "10",
     "videos": [
       {
-        "_id": "54c12b14dc9000ec25378b6b",
+        "_id": "54c482fe38e8e9fc210e18d7",
         "title": "这是视频标题",
         "describe": "这是视频描述",
-        "user_id": "54c12652dc9000ec25378b6a",
-        "create_time": "2015-01-22T08:53:40.277Z",
-        "object_name": "30fd858a-15ec-4273-af33-41bdb40df0dc",
+        "create_time": 142216806, //GMT 秒数
+        "object_name": "e41dea19-89df-44da-8dd0-9d336d238556",
         "original_filename": "miaopai0725.mp4",
         "duration": 59.1,
-        "cover": "30fd858a-15ec-4273-af33-41bdb40df0dc_0s.jpg"
-      },
-      {
-        "_id": "54c0ed5fd21d193021b96afb",
-        "title": "这是视频标题",
-        "describe": "这是视频描述",
-        "user_id": "54c0e6c42daf32f00cdf0a5c",
-        "create_time": "2015-01-22T04:30:23.236Z",
-        "object_name": "e0cb11f1-1edd-4824-8f04-ef3423b1cc61",
-        "original_filename": "miaopai0725.mp4",
-        "duration": 59.1,
-        "cover": "e0cb11f1-1edd-4824-8f04-ef3423b1cc61_0s.jpg",
-        "up": 19,
-        "collected": 25
+        "cover": "e41dea19-89df-44da-8dd0-9d336d238556_0s.jpg",
+        "collected": 2, // 被收藏数
+        "uped": 1 //被赞次数
+        "isuped": true, //当前登录用户是否赞过该视频
+        "user": {
+          "_id": "54c3c65ec0e1c75c1223e6a4",
+          "phone": "15820456816",
+          "sex": "0",
+          "address": "深圳市",
+          "motto": "我要当厨师",
+          "nickname": "yyper",
+          "portrait": "0a89ccc5-cee7-4389-8b40-49f60646dcb6.jpg"
+        }
       }
     ]
   }

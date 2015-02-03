@@ -4,7 +4,7 @@
 登录成功后，会将user_id写到cookie里
 
 ##url
-`/user/signup`
+`/user/signin`
 
 
 ##http method

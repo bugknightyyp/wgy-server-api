@@ -9,7 +9,7 @@
 ##http method
 `put`
 
-##params
+
 
 ##request
 eg
