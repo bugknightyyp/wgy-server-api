@@ -35,7 +35,8 @@ eg:
     "isFollowed": false //当前登录用户是否关注了该用户,
     "followed": 0, //关注数
     "uped": 0,//赞过的视频数量
-    "collected": 0 //收藏过的数量
+    "collected": 0, //收藏过的数量
+    "followed_by_other"： 1
   }
 }
 ```
