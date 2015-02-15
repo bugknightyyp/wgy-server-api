@@ -1,5 +1,6 @@
 # Summary
-
+* [common](content/common/index.md)
+    * [verification code by phone](content/common/mobile-phone-verification-code.md)
 * [user](content/user/index.md)
     * [signup](content/user/signup.md)
     * [signin](content/user/signin.md)
@@ -26,4 +27,5 @@
     * [is collected](content/video/is-collected.md)
     * [videos](content/video/videos.md)
     * [comment video](content/video/comment-video.md)
-    * [video comments](content/video/video-comments.md) 
+    * [video comments](content/video/video-comments.md)
+
