@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>follow user cancel | wgy server api 文档 wgy server api 文档</title>
+        <title>verification code by phone | wgy server api 文档 wgy server api 文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../content/video/index.html" />
+    <link rel="next" href="../../content/user/index.html" />
     
     
-    <link rel="prev" href="../../content/user/follow-user.html" />
+    <link rel="prev" href="../../content/common/index.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="2.15" data-basepath="../.." data-revision="1423973456505">
+    <div class="book" data-level="1.1" data-basepath="../.." data-revision="1423973456505">
     
 
 <div class="book-summary">
@@ -83,7 +83,7 @@
                 
     
         
-        <li class="chapter " data-level="1.1" data-path="content/common/mobile-phone-verification-code.html">
+        <li class="chapter active" data-level="1.1" data-path="content/common/mobile-phone-verification-code.html">
             
                 
                     <a href="../../content/common/mobile-phone-verification-code.html">
@@ -345,7 +345,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.15" data-path="content/user/follow-user-cancel.html">
+        <li class="chapter " data-level="2.15" data-path="content/user/follow-user-cancel.html">
             
                 
                     <a href="../../content/user/follow-user-cancel.html">
@@ -636,30 +636,31 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_3">
                     
-                        <h1 id="">取消关注用户</h1>
+                        <h1 id="">给手机发送验证码</h1>
 <h2 id="url">url</h2>
-<p><code>/user/:user_followed_id(被关注者id)/follow</code></p>
+<p><code>/phone/:phone_number/vc</code>(verification code)</p>
 <h2 id="http-method">http method</h2>
-<p><code>delete</code></p>
+<p><code>post</code></p>
+<h2 id="rquest-body-params">rquest body params</h2>
 <h2 id="request">request</h2>
 <p>eg:</p>
 <pre><code>[Request Header]
 
-Request URL: /user/54ca7291b615a4082b14311e/follow
-Request Method: DELETE
+Request URL: /phone/15820456816/vc
+Request Method: POST
+
+[Request Body]
 </code></pre><h2 id="respond">respond</h2>
 <p>eg:</p>
 <pre><code>{
-  &quot;ok&quot;: 1
-}
-
-or 
-
-{
-  &quot;ok&quot;: 0,
-  &quot;msg&quot;: &quot;不存在关注关系&quot;
+  &quot;ok&quot;: 1,
+  &quot;result&quot;: {
+    &quot;number&quot;: 206370,
+    &quot;phone_number&quot;: &quot;15820456816&quot;,
+    &quot;create_date&quot;: &quot;20150215120618&quot; //格式&quot;yyyyMMddHHmmss&quot;
+  }
 }
 </code></pre>
                     
@@ -671,10 +672,10 @@ or
         </div>
 
         
-        <a href="../../content/user/follow-user.html" class="navigation navigation-prev " aria-label="Previous page: follow user"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/common/index.html" class="navigation navigation-prev " aria-label="Previous page: common"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/video/index.html" class="navigation navigation-next " aria-label="Next page: video"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/user/index.html" class="navigation navigation-next " aria-label="Next page: user"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
