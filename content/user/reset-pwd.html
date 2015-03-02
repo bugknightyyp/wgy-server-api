@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>collect video | wgy server api 文档 wgy server api 文档</title>
+        <title>reset pwd | wgy server api 文档 wgy server api 文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../content/video/collect-video-cancel.html" />
+    <link rel="next" href="../../content/user/signin.html" />
     
     
-    <link rel="prev" href="../../content/video/add-video-delete.html" />
+    <link rel="prev" href="../../content/user/signup.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="3.3" data-basepath="../.." data-revision="1425309618753">
+    <div class="book" data-level="2.2" data-basepath="../.." data-revision="1424106477033">
     
 
 <div class="book-summary">
@@ -137,15 +137,15 @@
         </li>
     
         
-        <li class="chapter " data-level="2.2" data-path="content/user/delete-user-by-phone.html">
+        <li class="chapter active" data-level="2.2" data-path="content/user/reset-pwd.html">
             
                 
-                    <a href="../../content/user/delete-user-by-phone.html">
+                    <a href="../../content/user/reset-pwd.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
                         
-                         delete user by phone
+                         reset pwd
                     </a>
                 
             
@@ -431,7 +431,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="3.3" data-path="content/video/collect-video.html">
+        <li class="chapter " data-level="3.3" data-path="content/video/collect-video.html">
             
                 
                     <a href="../../content/video/collect-video.html">
@@ -652,19 +652,32 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_29">
+                    <section class="normal" id="section-gitbook_4">
                     
-                        <h1 id="">收藏视频</h1>
+                        <h1 id="">重设密码</h1>
+<p>重设密码成功后，会将user_id写到cookie里</p>
 <h2 id="url">url</h2>
-<p><code>/video/:video_id/collected</code></p>
+<p><code>/user/rest-pwd</code></p>
 <h2 id="http-method">http method</h2>
 <p><code>put</code></p>
+<h2 id="rquest-body-params">rquest body params</h2>
+<ul>
+<li><code>phone</code>: Number </li>
+<li><code>pwd</code>: String</li>
+<li><code>auth_code</code>: Number </li>
+</ul>
 <h2 id="request">request</h2>
-<p>eg</p>
+<p>eg:</p>
 <pre><code>[Request Header]
 
-Request URL: /video/54c0ed5fd21d193021b96afb/collected
+Request URL: /user/rest-pwd
 Request Method: PUT
+
+[Request Body]
+
+phone:15820456816
+pwd:wgyyyp8886423
+auth_code:58946
 </code></pre><h2 id="respond">respond</h2>
 <p>eg:</p>
 <pre><code>{
@@ -680,10 +693,10 @@ Request Method: PUT
         </div>
 
         
-        <a href="../../content/video/add-video-delete.html" class="navigation navigation-prev " aria-label="Previous page: delete video"><i class="fa fa-angle-left"></i></a>
+        <a href="../../content/user/signup.html" class="navigation navigation-prev " aria-label="Previous page: signup"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../content/video/collect-video-cancel.html" class="navigation navigation-next " aria-label="Next page: collect video cancel"><i class="fa fa-angle-right"></i></a>
+        <a href="../../content/user/signin.html" class="navigation navigation-next " aria-label="Next page: signin"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
