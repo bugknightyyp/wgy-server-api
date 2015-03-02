@@ -3,6 +3,7 @@
     * [verification code by phone](content/common/mobile-phone-verification-code.md)
 * [user](content/user/index.md)
     * [signup](content/user/signup.md)
+    * [delete user by phone](content/user/delete-user-by-phone.md)
     * [signin](content/user/signin.md)
     * [signout](content/user/signout.md)
     * [sex](content/user/sex.md)
